@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-#include<stdlib.h>
+// #include<stdlib.h>
 int main()
 {
 	float a,b,c;
@@ -10,7 +10,8 @@ int main()
 	if(det<0)
 	{
 		printf("Imaginary roots");
-		exit(0);
+// 		exit(0);
+		return 0;
 	}
 	printf("The roots are %f %f",(-b+pow(det,0.5))/(2*a),(-b-pow(det,0.5))/(2*a));
 	return 0;
