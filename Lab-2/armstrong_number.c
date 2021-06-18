@@ -4,31 +4,32 @@
 int main()
 {
 
-    int no = 153;
+    int no = 0;
+    printf("Enter the Number");
+    scanf("%i", &no);
 
-    int k=no;
-    int cnt=0;
-    while(no>0){
+    int k = no;
+    int cnt = 0;
+    while (no > 0)
+    {
         ++cnt;
 
-        no=no/10;
-
-    
-
+        no = no / 10;
     }
 
     // printf("%i", cnt);
-    
-    int s=k;
-    int t=0;
+
+    int s = k;
+    int t = 0;
     int temp;
-    while(k>0){
-        temp=k%10;
+    while (k > 0)
+    {
+        temp = k % 10;
         // printf("%i \n", temp);
         t += pow(temp, cnt);
         // printf("%i \n", t);
 
-        k=k/10;
+        k = k / 10;
     }
 
     // printf("%i \n", s);
