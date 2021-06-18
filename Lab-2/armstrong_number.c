@@ -3,6 +3,7 @@
 
 int main()
 {
+
     int no = 153;
 
     int k=no;
@@ -11,6 +12,9 @@ int main()
         ++cnt;
 
         no=no/10;
+
+    
+
     }
 
     // printf("%i", cnt);
