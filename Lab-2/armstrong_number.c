@@ -3,7 +3,7 @@
 
 int main()
 {
-    int no = 153;
+    int no=0;
     printf("Enter the Number");
     scanf("%d", &no);
     int no_of_digits = 0;
