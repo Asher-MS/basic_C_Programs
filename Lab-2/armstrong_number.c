@@ -3,27 +3,38 @@
 
 int main()
 {
-    int no=0;
-    printf("Enter the Number");
-    scanf("%d", &no);
-    int no_of_digits = 0;
-    for (int i = 10;; i = i * 10)
-    {
-        if (no % i == no)
-        {
-            no_of_digits = log10(i);
-            break;
-        }
-    }
-    int temp = no;
-    int x = 0;
-    while (no >= 1)
-    {
-        x = x + pow(no % 10, no_of_digits);
-        no = no / 10;
+
+    int no = 153;
+
+    int k=no;
+    int cnt=0;
+    while(no>0){
+        ++cnt;
+
+        no=no/10;
+
+    
+
     }
 
-    if (x == temp)
+    // printf("%i", cnt);
+    
+    int s=k;
+    int t=0;
+    int temp;
+    while(k>0){
+        temp=k%10;
+        // printf("%i \n", temp);
+        t += pow(temp, cnt);
+        // printf("%i \n", t);
+
+        k=k/10;
+    }
+
+    // printf("%i \n", s);
+    // printf("%i \n", t);
+
+    if (s == t)
     {
         printf("The Number is Armstrong");
     }
