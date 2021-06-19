@@ -8,10 +8,17 @@ int main()
     switch (no / abs(no))
     {
     case 1:
-        if (no == 0)
-            printf("No is 0");
-        else
-            printf("The number is Positive");
+        switch (no)
+        {
+        case 0:
+        {
+            printf("The number is 0");
+            break;
+        }
+        default:
+            printf("The Number is  Positive");
+            break;
+        }
         break;
     case -1:
         printf("The Number is negative");
