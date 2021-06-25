@@ -6,27 +6,29 @@ int main()
     int length = 0;
     printf("Enter the length");
     scanf("%d", &length);
+    int flag = 0;
+    int min;
     for (int i = 0; i < length; ++i)
     {
+
         scanf("%d", &arr[i]);
+        if (i == 0)
+            min = arr[0];
+        if (min > arr[i])
+            min = arr[i];
     }
 
-    //Bubble Sort
-    for (int i = 0; i < length; ++i)
+    int min2;
+    if (arr[0] == min)
+        min2 = arr[1];
+    else
+        min2 = arr[0];
+
+    for (int j = 0; j < length; ++j)
     {
-        for (int j = 0; j < length - i - 1; ++j)
-        {
-            // printf("%d boom %d\n", arr[j], arr[j + 1]);
-            if (arr[j] > arr[j + 1])
-            {
-                int temp;
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
+        if (arr[j] < min2 && arr[j] != min)
+            min2 = arr[j];
     }
-    printf("The second smallest element is %d", arr[1]);
-
+    printf("The second smallest element is %d", min2);
     return 0;
 }
