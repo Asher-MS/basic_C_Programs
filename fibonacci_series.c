@@ -10,7 +10,7 @@ int main()
 	int second=1;
 	for(int i=0;i<no;++i)
 	{	
-		printf(" %d",first);
+		printf("%d ",first);
 		int temp;
 		temp=second;
 		second+=first;

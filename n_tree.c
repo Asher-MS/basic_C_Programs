@@ -11,5 +11,7 @@ int main(){
 		}
 		printf("\n");
 	}
+	
+	system("cls");
 	return 0;
 }
