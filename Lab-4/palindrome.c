@@ -12,7 +12,7 @@ int main()
 	
 	
 	
-	for(int i=0;i<length;++i)
+	for(int i=0;i<length/2;++i)
 	{
 		if(a[i]!=a[length-i-1])
 		{
