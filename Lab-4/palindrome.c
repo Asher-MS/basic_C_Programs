@@ -20,6 +20,7 @@ int main()
 			break;
 		}
 	}
+	
 	if(is_palindrome)
 		printf("It is a Palindrome\n");
 	else

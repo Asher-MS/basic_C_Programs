@@ -16,7 +16,7 @@ int main()
     {
         for (int j = 0; j < length - i - 1; ++j)
         {
-            // printf("%d boom %d\n", arr[j], arr[j + 1]);
+            
             if (arr[j] > arr[j + 1])
             {
                 int temp;
