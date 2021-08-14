@@ -21,7 +21,11 @@ int main()
         }
     }
     // printf("%d", min_index);
-    arr[min_index] = INT_MAX;
+    for (int i = 0; i < length; ++i)
+    {
+        if (arr[i] == min)
+            arr[i] = INT_MAX;
+    }
 
     for (int i = 0; i < length; ++i)
     {
