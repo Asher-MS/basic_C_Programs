@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main()
 {
@@ -6,12 +7,11 @@ int main()
     int length = 0;
     printf("Enter the length");
     scanf("%d", &length);
-    int max, min = 0;
+    int max = INT_MIN, min = INT_MAX;
     for (int i = 0; i < length; ++i)
     {
         scanf("%d", &arr[i]);
-        if (i == 0)
-            max = min = arr[i];
+
         if (arr[i] > max)
             max = arr[i];
         if (arr[i] < min)
