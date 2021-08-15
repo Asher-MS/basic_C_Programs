@@ -19,8 +19,7 @@ int main()
 		result[rindex] = b[i];
 	}
 	result[rindex] = '\0';
-	printf("The Result is \"%s", result);
-	printf("\"");
+	printf("The Result is \"%s\"", result);
 
 	return 0;
 }
