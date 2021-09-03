@@ -32,6 +32,7 @@ int main()
 			{
 				printf("The matrices are not same");
 				return 0;
+				// break;
 			}
 		}
 	}
