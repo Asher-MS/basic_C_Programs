@@ -50,15 +50,10 @@ void matrix_display(int (*matrix)[max],int n,int m)
 
 
 //FUNCTION TO ADD THE MATRICES
-void matrix_addition()
+void matrix_addition(int matrix1[max][max],int matrix2[max][max],int n1,int m1,int n2,int m2)
 {	
-	int matrix1[max][max],matrix2[max][max];
-	int n1,n2,m1,m2;
 	int result[max][max];
 
-	input_matrix(matrix1,&n1,&m1);
-	input_matrix(matrix2,&n2,&m2);
-	
 	printf("The sum is \n");
 	if(n1==n2 && m1==m2)
 	{
@@ -80,12 +75,10 @@ void matrix_addition()
 }
 
 //FUNCTION FIND THE TRANSPOSE OF THE MATRIX
-void matrix_transpose()
-{
-	int matrix[max][max];
+void matrix_transpose(int matrix[max][max],int n,int m)
+{	
 	int result[max][max];
-	int n,m;
-	input_matrix(matrix,&n,&m);
+	
 	for(int i=0;i<n;++i)
 	{
 		for(int j=0;j<m;++j)
@@ -102,13 +95,9 @@ void matrix_transpose()
 }
 
 //FUNCTION TO FIND THE PRODUCT OF THE MATRICES
-void matrix_multiplication()
+void matrix_multiplication(int matrix1[max][max],int matrix2[max][max],int n1,int m1,int n2,int m2)
 {	
-	int matrix1[max][max],matrix2[max][max];
-	int n1,n2,m1,m2;
 	int result[max][max];
-	input_matrix(matrix1,&n1,&m1);
-	input_matrix(matrix2,&n2,&m2);
 	if(m1==n2)
 	{
 		for(int i=0;i<n1;++i)
@@ -144,19 +133,33 @@ int main()
 	switch(choice)
 	{
 		case 1:
-		{
-			matrix_addition();
+		{	
+			int matrix1[max][max],matrix2[max][max];
+			int n1,n2,m1,m2;
+			
+
+			input_matrix(matrix1,&n1,&m1);
+			input_matrix(matrix2,&n2,&m2);
+			matrix_addition(matrix1,matrix2,n1,m1,n2,m2);
 			break;
 		}
 
 		case 2:
-		{
-			matrix_multiplication();
+		{	
+			int matrix1[max][max],matrix2[max][max];
+			int n1,n2,m1,m2;
+			
+			input_matrix(matrix1,&n1,&m1);
+			input_matrix(matrix2,&n2,&m2);
+			matrix_multiplication(matrix1,matrix2,n1,m1,n2,m2);
 			break;
 		}
 		case 3:
-		{
-			matrix_transpose();
+		{	int matrix[max][max];
+			
+			int n,m;
+			input_matrix(matrix,&n,&m);
+			matrix_transpose(matrix,n,m);
 			break;
 		}
 		default:
