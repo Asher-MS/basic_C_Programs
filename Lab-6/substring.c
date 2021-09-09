@@ -12,7 +12,7 @@ int is_substring(char st[100],char subst[100])
 		{
 			sub_index++;
 			if(sub_index>=sub_length)
-			return 1;
+				return 1;
 
 		}else
 		{

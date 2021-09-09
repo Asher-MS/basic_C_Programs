@@ -1,15 +1,4 @@
-/* 
-TO-DO
-------
-1.Write the main structure of the code 
-2.Write the main function(The main menu logic)
-3.Write the addition function
-4.Write the transpose function
-5.Write the Product function
-6.Write the input function
-7.Write the display function
 
-*/
 
 #include<stdio.h>
 #define max 100
