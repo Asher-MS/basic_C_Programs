@@ -1,2 +1,2 @@
 # Basic C Programs
-Some of the basic programs in C language.
+Some of the basic programs written in C language.
