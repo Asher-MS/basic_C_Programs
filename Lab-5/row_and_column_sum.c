@@ -10,14 +10,13 @@ int main()
 	int column_sum[100] = {0};
 	for (int i = 0; i < x; ++i)
 	{
-		int row_s = 0;
+
 		for (int j = 0; j < y; ++j)
 		{
 			scanf("%d", &arr[i][j]);
-			row_s += arr[i][j];
+			row_sum[i] += arr[i][j];
 			column_sum[j] += arr[i][j];
 		}
-		row_sum[i] = row_s;
 	}
 
 	printf("The row Sums are  ");
