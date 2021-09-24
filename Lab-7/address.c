@@ -1,45 +1,47 @@
 #include <stdio.h>
-#include <string.h>
-#define C_SIZE 20
-union address
+#include <stdlib.h>
+
+#define C_SIZE 25
+
+union Address
 {
-	char name[C_SIZE];
-	char house_name[C_SIZE];
-	char city_name[C_SIZE];
-	char state[C_SIZE];
-	char pincode[C_SIZE];
-};
+   char name[C_SIZE];
+   char house[C_SIZE];
+   char city[C_SIZE];
+   char state[C_SIZE];
+   char pincode[C_SIZE];
+}a;
 
 int main()
 {
-	char address_of_person[100];
-	union address person;
-	printf("Enter The name\n");
-	gets(person.name);
-	strcat(person.name, "\n");
-	strcat(address_of_person, person.name);
-	printf("Enter the House name");
+    printf("Enter the name of the person:");
+    gets(a.name);
+    printf("Name: ");
+    puts(a.name);
+    printf("\n");
 
-	gets(person.house_name);
-	strcat(person.house_name, "\n");
-	strcat(address_of_person, person.house_name);
-	printf("Enter the city name");
+    printf("Enter the name of the house:");
+    gets(a.house);
+    printf("House name: ");
+    puts(a.house);
+    printf("\n");
 
-	gets(person.city_name);
-	strcat(person.city_name, "\n");
-	strcat(address_of_person, person.city_name);
-	printf("Enter the state");
+    printf("Enter the name of the city:");
+    gets(a.city);
+    printf("City: ");
+    puts(a.city);
+    printf("\n");
 
-	gets(person.state);
-	strcat(person.state, "\n");
-	strcat(address_of_person, person.state);
-	printf("Enter the pincode");
+    printf("Enter the name of the state:");
+    gets(a.state);
+    printf("State: ");
+    puts(a.state);
+    printf("\n");
+	
+    printf("Enter pincode:");
+    gets(a.pincode);
+    printf("Pincode: ");
+    puts(a.pincode);
 
-	gets(person.pincode);
-	strcat(person.pincode, "\n");
-	strcat(address_of_person, person.pincode);
-
-	printf("%s", address_of_person);
-
-	return 0;
+    return 0;
 }
