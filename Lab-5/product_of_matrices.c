@@ -31,7 +31,7 @@ int main()
 		for (int i = 0; i < x1; ++i)
 		{
 
-			for (int j = 0; j < y1; ++j)
+			for (int j = 0; j < y2; ++j)
 			{
 				int temp_sum = 0;
 				for (int k = 0; k < x2; ++k)

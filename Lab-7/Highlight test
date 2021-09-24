@@ -1,0 +1,69 @@
+Highlighting groups for various occasions
+-----------------------------------------
+SpecialKey	SpecialKey
+NonText	NonText EndOfBuffer
+Directory	Directory
+ErrorMsg	ErrorMsg
+IncSearch	IncSearch
+Search	Search QuickFixLine
+MoreMsg	MoreMsg
+ModeMsg	ModeMsg
+LineNr	LineNr
+CursorLineNr	CursorLineNr
+Question	Question
+StatusLine	StatusLine
+StatusLineNC	StatusLineNC
+VertSplit	VertSplit
+Title	Title
+Visual	Visual
+VisualNOS	VisualNOS
+WarningMsg	WarningMsg
+WildMenu	WildMenu
+Folded	Folded
+FoldColumn	FoldColumn
+DiffAdd	DiffAdd
+DiffChange	DiffChange
+DiffDelete	DiffDelete
+DiffText	DiffText
+SignColumn	SignColumn
+Conceal	Conceal
+SpellBad	SpellBad
+SpellCap	SpellCap
+SpellRare	SpellRare
+SpellLocal	SpellLocal
+Pmenu	Pmenu
+PmenuSel	PmenuSel
+PmenuSbar	PmenuSbar
+PmenuThumb	PmenuThumb
+TabLine	TabLine
+TabLineSel	TabLineSel
+TabLineFill	TabLineFill
+CursorColumn	CursorColumn
+CursorLine	CursorLine
+ColorColumn	ColorColumn
+StatusLineTerm	StatusLineTerm
+StatusLineTermNC	StatusLineTermNC
+Cursor	Cursor
+
+Syntax highlighting groups
+--------------------------
+lCursor	lCursor
+Normal	Normal
+MatchParen	MatchParen
+ToolbarLine	ToolbarLine
+ToolbarButton	ToolbarButton
+Comment	Comment cComment cCommentSkip cCommentL cCommentStart cCppOut cCppOutIf2 cCppOutSkip cCppInElse2
+Constant	Constant String Character Number Boolean Float cString cCppString cCharacter cIncluded cCommentString
+	cComment2String cNumber cFloat cOctal cConstant
+Special	Special Tag SpecialChar Delimiter SpecialComment Debug cSpecial cFormat cSpecialCharacter
+Identifier	Identifier Function
+Statement	Statement Conditional Repeat Label Operator Keyword Exception cStatement cLabel cConditional cRepeat
+	cUserLabel cOperator
+PreProc	PreProc Include Define Macro PreCondit cOctalZero cPreCondit cPreConditMatch cCppOutWrapper cCppInWrapper
+	cPreProc cInclude cDefine
+Type	Type StorageClass Structure Typedef cType cTypedef cStructure cStorageClass
+Underlined	Underlined
+Ignore	Ignore
+Error	Error cBadContinuation cError cSpaceError cSpecialError cCurlyError cErrInParen cErrInBracket cParenError
+	cCommentStartError cOctalError cWrongComTail cCommentError
+Todo	Todo cTodo
