@@ -17,7 +17,7 @@ int main()
 	printf("Enter The name\n");
 	gets(person.name);
 	strcat(person.name, "\n");
-	strcat(address_of_person, person.name);
+	strcpy(address_of_person, person.name);
 	printf("Enter the House name");
 
 	gets(person.house_name);
@@ -38,7 +38,7 @@ int main()
 	gets(person.pincode);
 	strcat(person.pincode, "\n");
 	strcat(address_of_person, person.pincode);
-
+	printf("ADDRESS : \n");
 	printf("%s", address_of_person);
 
 	return 0;
