@@ -4,13 +4,20 @@
 int main()
 {
 	FILE *fileptrsource,*fileptrdestination;
-	fileptrsource=fopen("sample.txt","r");
+	char content[100];
+	printf("Enter the content of file one");
+	gets(content);
+	fileptrsource=fopen("source.txt","w");
+	fprintf(fileptrsource,"%s",content);
+	fclose(fileptrsource);
+
+	fileptrsource=fopen("source.txt","r");
 	if(fileptrsource==NULL)
 	{
 		printf("Unable to read source file");
 		exit(0);
 	}
-	fileptrdestination=fopen("sample_dest.txt","w");
+	fileptrdestination=fopen("dest.txt","w");
 
 	while(1)
 	{	
