@@ -1,3 +1,5 @@
+/* c program for adding two numbers by using function */
+
 #include <stdio.h>
 
 int sum(int a, int b)
